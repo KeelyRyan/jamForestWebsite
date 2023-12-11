@@ -1,0 +1,138 @@
+/*
+colour scheme 
+lime green : #7ED320;
+silver : C0C0C0
+white
+black
+*/
+body {
+    font-family: "Hiragino sans", "MS PGothic", sans-serif;
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
+    
+  }
+  h2 {
+    padding-bottom: 10px;
+  }
+section {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+.blackbackground {
+  background-color: black;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.tagline {
+  color: white;
+}
+.nav {
+  float: right;
+  position: fixed;
+  align-items: right;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+.nav-link {
+  color: #7ed320;
+  font-size: 30px;
+}
+.socials {
+  padding-top: 10px;
+  position: fixed;
+}
+.social {
+  color: #7ed320;
+}
+
+.gradient-background {
+  padding: 40px 0px 40px 20px;
+  background: linear-gradient(300deg, #c0c0c0, #ffffff, #7ed320);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+.carousel-inner {
+width: 100%;
+}
+
+#center-button {
+margin-left: auto;
+}
+
+.line-up{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    padding: 10px;
+    }
+.spacer{
+    margin-left: 4%;
+}
+footer {
+    color: #7ed320;
+
+    padding: 40px 10px 10px 10px;
+}
+
+a {
+    color: #7ed320;
+    padding: 2px
+}
+
+  a .tooltiptext {
+    visibility: hidden;
+    width: 75px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border: 3px solid #7ed320;
+    padding: 3px 5px;
+  
+    /* Position the tooltip */
+    
+    bottom: 100%;
+    left: 50%;
+    margin-left: -90px; /* Use half of the width (120/2 = 60), to center the tooltip */
+  }
+  
+  a:hover .tooltiptext {
+    visibility: visible;
+  }
+#modal-logo
+{
+  width: 25%;
+}
+  @media screen and (max-width: 990px) {
+    .nav {
+      display: none;
+    }   
+    .socials {
+        position:relative;
+      }
+      .myCarousel{
+        display: none;
+      }
+      .line-up{
+        width: 50%;
+      }
+
+}
